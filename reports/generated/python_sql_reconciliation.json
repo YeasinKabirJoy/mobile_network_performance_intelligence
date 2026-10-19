@@ -1,0 +1,71 @@
+{
+  "reconciled_at_utc": "2026-10-19T10:17:54.782353+00:00",
+  "scope": "All Q4 2024 retained Bangladesh tiles; no region filter",
+  "comparisons": [
+    {
+      "metric": "tiles",
+      "python": 15956,
+      "sqlite": 15956,
+      "difference": 0.0,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "metric": "tests",
+      "python": 62785,
+      "sqlite": 62785,
+      "difference": 0.0,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "metric": "devices",
+      "python": 29693,
+      "sqlite": 29693,
+      "difference": 0.0,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "metric": "tile_avg_download_mbps",
+      "python": 36.078124655302084,
+      "sqlite": 36.078124655302084,
+      "difference": 0.0,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "metric": "test_weighted_download_mbps",
+      "python": 37.625393756470494,
+      "sqlite": 37.625393756470494,
+      "difference": 0.0,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "metric": "test_weighted_upload_mbps",
+      "python": 16.039675017918288,
+      "sqlite": 16.03967501791829,
+      "difference": 3.552713678800501e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "metric": "test_weighted_idle_latency_ms",
+      "python": 31.13791510711157,
+      "sqlite": 31.13791510711157,
+      "difference": 0.0,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "metric": "complete_loaded_latency_tiles",
+      "python": 15483,
+      "sqlite": 15483,
+      "difference": 0.0,
+      "tolerance": 1e-09,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

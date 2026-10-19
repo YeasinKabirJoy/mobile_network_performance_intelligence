@@ -1,0 +1,98 @@
+{
+  "created_at_utc": "2026-10-19T09:54:00.143043+00:00",
+  "assignment_rule": "bbox pre-filter, then EPSG:4326 centroid intersects ADM1; ties use ascending shapeISO",
+  "source_rows": 3551267,
+  "projected_source_columns": [
+    "quadkey",
+    "tile",
+    "tile_x",
+    "tile_y",
+    "avg_d_kbps",
+    "avg_u_kbps",
+    "avg_lat_ms",
+    "avg_lat_down_ms",
+    "avg_lat_up_ms",
+    "tests",
+    "devices"
+  ],
+  "bbox": {
+    "min_x": 88.0,
+    "max_x": 92.8,
+    "min_y": 20.5,
+    "max_y": 26.7
+  },
+  "bbox_candidate_rows": 49213,
+  "retained_rows": 15956,
+  "ambiguous_boundary_centroids": 0,
+  "unmatched_bbox_candidates": 33257,
+  "duplicate_retained_quadkeys": 0,
+  "missing_retained_geometry": 0,
+  "boundary_crs": "EPSG:4326",
+  "boundary_features": 8,
+  "invalid_boundary_geometries": 0,
+  "empty_boundary_geometries": 0,
+  "regions_expected": [
+    "BD-A",
+    "BD-B",
+    "BD-C",
+    "BD-D",
+    "BD-E",
+    "BD-F",
+    "BD-G",
+    "BD-H"
+  ],
+  "regions_observed": [
+    "BD-A",
+    "BD-B",
+    "BD-C",
+    "BD-D",
+    "BD-E",
+    "BD-F",
+    "BD-G",
+    "BD-H"
+  ],
+  "rows_by_adm1": {
+    "Barisal": 961,
+    "Chittagong": 4022,
+    "Dhaka": 4420,
+    "Khulna": 1467,
+    "Mymensingh": 709,
+    "Rajshani": 1582,
+    "Rangpur": 1524,
+    "Sylhet": 1271
+  },
+  "tests_by_adm1": {
+    "Barisal": 3385,
+    "Chittagong": 13813,
+    "Dhaka": 25540,
+    "Khulna": 4203,
+    "Mymensingh": 1900,
+    "Rajshani": 4706,
+    "Rangpur": 4976,
+    "Sylhet": 4262
+  },
+  "devices_by_adm1": {
+    "Barisal": 1368,
+    "Chittagong": 6971,
+    "Dhaka": 11811,
+    "Khulna": 2115,
+    "Mymensingh": 995,
+    "Rajshani": 2356,
+    "Rangpur": 2195,
+    "Sylhet": 1882
+  },
+  "retained_coordinate_extent": {
+    "min_x": 88.0417,
+    "max_x": 92.6065,
+    "min_y": 20.769,
+    "max_y": 26.590999999999998
+  },
+  "output_path": "D:/others/Github/mobile_network_performance_intelligence/data/interim/bgd_mobile_tiles_2024_q4.parquet",
+  "output_size_bytes": 1153962,
+  "figure_path": "D:/others/Github/mobile_network_performance_intelligence/reports/figures/bgd_tile_centroids_2024_q4.png",
+  "limitations": [
+    "Centroid assignment does not measure tile-polygon overlap.",
+    "Unmatched bbox candidates mostly represent neighboring countries or water.",
+    "Administrative labels are retained from the selected boundary release."
+  ]
+}

@@ -1,0 +1,11 @@
+duckdb>=1.4,<2
+geopandas>=1.0,<2
+jupyterlab>=4.2,<5
+matplotlib>=3.9,<4
+numpy>=2.0,<3
+pandas>=2.2,<3
+pyarrow>=17,<23
+pywin32>=311; platform_system == "Windows"
+requests>=2.32,<3
+seaborn>=0.13,<1
+shapely>=2.0,<3

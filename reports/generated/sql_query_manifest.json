@@ -1,0 +1,200 @@
+{
+  "executed_at_utc": "2026-10-19T10:17:50.211435+00:00",
+  "database": "D:/others/Github/mobile_network_performance_intelligence/data/processed/network_performance.sqlite",
+  "query_count": 15,
+  "queries": [
+    {
+      "name": "01_dataset_overview",
+      "sql_file": "sql/kpis.sql",
+      "output": "reports/generated/sql/01_dataset_overview.csv",
+      "rows": 1,
+      "columns": [
+        "quarter_label",
+        "tiles",
+        "tests",
+        "devices",
+        "regions"
+      ]
+    },
+    {
+      "name": "02_overall_speed_kpis",
+      "sql_file": "sql/kpis.sql",
+      "output": "reports/generated/sql/02_overall_speed_kpis.csv",
+      "rows": 1,
+      "columns": [
+        "tile_avg_download_mbps",
+        "test_weighted_download_mbps",
+        "tile_avg_upload_mbps",
+        "test_weighted_upload_mbps"
+      ]
+    },
+    {
+      "name": "03_overall_latency_kpis",
+      "sql_file": "sql/kpis.sql",
+      "output": "reports/generated/sql/03_overall_latency_kpis.csv",
+      "rows": 1,
+      "columns": [
+        "tile_avg_idle_latency_ms",
+        "test_weighted_idle_latency_ms"
+      ]
+    },
+    {
+      "name": "04_loaded_latency_kpis",
+      "sql_file": "sql/kpis.sql",
+      "output": "reports/generated/sql/04_loaded_latency_kpis.csv",
+      "rows": 1,
+      "columns": [
+        "eligible_download_loaded_tiles",
+        "eligible_download_loaded_tests",
+        "test_weighted_download_loaded_latency_ms",
+        "eligible_upload_loaded_tiles",
+        "eligible_upload_loaded_tests",
+        "test_weighted_upload_loaded_latency_ms"
+      ]
+    },
+    {
+      "name": "05_quality_control_totals",
+      "sql_file": "sql/kpis.sql",
+      "output": "reports/generated/sql/05_quality_control_totals.csv",
+      "rows": 1,
+      "columns": [
+        "low_volume_tiles",
+        "incomplete_loaded_latency_tiles",
+        "no_flag_tiles",
+        "zero_idle_latency_tiles",
+        "boundary_ambiguous_tiles"
+      ]
+    },
+    {
+      "name": "06_quarter_coverage",
+      "sql_file": "sql/kpis.sql",
+      "output": "reports/generated/sql/06_quarter_coverage.csv",
+      "rows": 1,
+      "columns": [
+        "period_start",
+        "quarter_label",
+        "tiles",
+        "regions",
+        "tests",
+        "devices"
+      ]
+    },
+    {
+      "name": "07_regional_measurement_volume",
+      "sql_file": "sql/regional_analysis.sql",
+      "output": "reports/generated/sql/07_regional_measurement_volume.csv",
+      "rows": 8,
+      "columns": [
+        "adm1_name",
+        "tiles",
+        "tests",
+        "devices",
+        "tests_per_device"
+      ]
+    },
+    {
+      "name": "08_regional_weighted_performance",
+      "sql_file": "sql/regional_analysis.sql",
+      "output": "reports/generated/sql/08_regional_weighted_performance.csv",
+      "rows": 8,
+      "columns": [
+        "adm1_name",
+        "weighted_download_mbps",
+        "weighted_upload_mbps",
+        "weighted_idle_latency_ms",
+        "denominator_tests"
+      ]
+    },
+    {
+      "name": "09_regional_weighted_unweighted_gap",
+      "sql_file": "sql/regional_analysis.sql",
+      "output": "reports/generated/sql/09_regional_weighted_unweighted_gap.csv",
+      "rows": 8,
+      "columns": [
+        "adm1_name",
+        "unweighted_download_mbps",
+        "weighted_download_mbps",
+        "weighted_minus_unweighted_mbps"
+      ]
+    },
+    {
+      "name": "10_regional_rankings",
+      "sql_file": "sql/regional_analysis.sql",
+      "output": "reports/generated/sql/10_regional_rankings.csv",
+      "rows": 8,
+      "columns": [
+        "adm1_name",
+        "weighted_download_mbps",
+        "weighted_idle_latency_ms",
+        "tests",
+        "download_rank_best_first",
+        "latency_rank_best_first"
+      ]
+    },
+    {
+      "name": "11_regional_volume_mix",
+      "sql_file": "sql/regional_analysis.sql",
+      "output": "reports/generated/sql/11_regional_volume_mix.csv",
+      "rows": 24,
+      "columns": [
+        "adm1_name",
+        "measurement_volume",
+        "tiles",
+        "region_tile_percent"
+      ]
+    },
+    {
+      "name": "12_regional_loaded_latency_missingness",
+      "sql_file": "sql/regional_analysis.sql",
+      "output": "reports/generated/sql/12_regional_loaded_latency_missingness.csv",
+      "rows": 8,
+      "columns": [
+        "adm1_name",
+        "tiles",
+        "missing_download_loaded_tiles",
+        "missing_upload_loaded_tiles",
+        "incomplete_loaded_latency_percent"
+      ]
+    },
+    {
+      "name": "13_download_speed_deciles",
+      "sql_file": "sql/regional_analysis.sql",
+      "output": "reports/generated/sql/13_download_speed_deciles.csv",
+      "rows": 10,
+      "columns": [
+        "download_decile",
+        "tiles",
+        "minimum_download_mbps",
+        "maximum_download_mbps",
+        "tests"
+      ]
+    },
+    {
+      "name": "14_low_speed_high_latency_candidates",
+      "sql_file": "sql/regional_analysis.sql",
+      "output": "reports/generated/sql/14_low_speed_high_latency_candidates.csv",
+      "rows": 65,
+      "columns": [
+        "quadkey",
+        "adm1_name",
+        "avg_d_mbps",
+        "avg_lat_ms",
+        "tests",
+        "measurement_volume"
+      ]
+    },
+    {
+      "name": "15_region_device_intensity",
+      "sql_file": "sql/regional_analysis.sql",
+      "output": "reports/generated/sql/15_region_device_intensity.csv",
+      "rows": 8,
+      "columns": [
+        "adm1_name",
+        "tile_avg_tests_per_device",
+        "aggregate_tests_per_device",
+        "minimum_tile_tests_per_device",
+        "maximum_tile_tests_per_device"
+      ]
+    }
+  ]
+}

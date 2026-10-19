@@ -1,0 +1,254 @@
+{
+  "inspected_at_utc": "2026-10-19T09:46:50.382056+00:00",
+  "source_path": "D:/others/Github/mobile_network_performance_intelligence/data/raw/2024-10-01_performance_mobile_tiles.parquet",
+  "file_size_bytes": 195139957,
+  "row_count": 3551267,
+  "schema": [
+    {
+      "name": "quadkey",
+      "type": "VARCHAR",
+      "nullable": true
+    },
+    {
+      "name": "tile",
+      "type": "VARCHAR",
+      "nullable": true
+    },
+    {
+      "name": "tile_x",
+      "type": "DOUBLE",
+      "nullable": true
+    },
+    {
+      "name": "tile_y",
+      "type": "DOUBLE",
+      "nullable": true
+    },
+    {
+      "name": "avg_d_kbps",
+      "type": "BIGINT",
+      "nullable": true
+    },
+    {
+      "name": "avg_u_kbps",
+      "type": "BIGINT",
+      "nullable": true
+    },
+    {
+      "name": "avg_lat_ms",
+      "type": "BIGINT",
+      "nullable": true
+    },
+    {
+      "name": "avg_lat_down_ms",
+      "type": "INTEGER",
+      "nullable": true
+    },
+    {
+      "name": "avg_lat_up_ms",
+      "type": "INTEGER",
+      "nullable": true
+    },
+    {
+      "name": "tests",
+      "type": "BIGINT",
+      "nullable": true
+    },
+    {
+      "name": "devices",
+      "type": "BIGINT",
+      "nullable": true
+    }
+  ],
+  "null_counts": {
+    "quadkey": 0,
+    "tile": 0,
+    "tile_x": 0,
+    "tile_y": 0,
+    "avg_d_kbps": 0,
+    "avg_u_kbps": 0,
+    "avg_lat_ms": 0,
+    "avg_lat_down_ms": 89345,
+    "avg_lat_up_ms": 52757,
+    "tests": 0,
+    "devices": 0
+  },
+  "duplicate_quadkeys": 0,
+  "global_quality_checks": {
+    "min_tile_x": -179.9973,
+    "max_tile_x": 179.9918,
+    "min_tile_y": -71.99170000000001,
+    "max_tile_y": 79.3955,
+    "nonpositive_tests": 0,
+    "nonpositive_devices": 0,
+    "tests_less_than_devices": 0,
+    "nonpositive_avg_d_kbps": 0,
+    "nonpositive_avg_u_kbps": 0,
+    "negative_avg_lat_ms": 0
+  },
+  "bangladesh_bbox": {
+    "min_x": 88.0,
+    "max_x": 92.8,
+    "min_y": 20.5,
+    "max_y": 26.7
+  },
+  "bangladesh_bbox_row_count": 49213,
+  "bangladesh_bbox_summary": {
+    "min_tile_x": 88.00319999999999,
+    "max_tile_x": 92.7988,
+    "min_tile_y": 20.635399999999997,
+    "max_tile_y": 26.699,
+    "tests": 303300,
+    "devices": 132375,
+    "min_avg_d_kbps": 1,
+    "max_avg_d_kbps": 1317762,
+    "min_avg_u_kbps": 1,
+    "max_avg_u_kbps": 170529,
+    "min_avg_lat_ms": 0,
+    "max_avg_lat_ms": 2160
+  },
+  "representative_bbox_rows": [
+    {
+      "quadkey": "1231331230301123",
+      "tile_x": 88.14060000000002,
+      "tile_y": 24.9885,
+      "avg_d_kbps": 227523,
+      "avg_u_kbps": 23268,
+      "avg_lat_ms": 49,
+      "avg_lat_down_ms": 631,
+      "avg_lat_up_ms": 817,
+      "tests": 975,
+      "devices": 15
+    },
+    {
+      "quadkey": "1231333213033302",
+      "tile_x": 88.39869999999999,
+      "tile_y": 22.7686,
+      "avg_d_kbps": 147937,
+      "avg_u_kbps": 8494,
+      "avg_lat_ms": 22,
+      "avg_lat_down_ms": 643,
+      "avg_lat_up_ms": 1326,
+      "tests": 577,
+      "devices": 9
+    },
+    {
+      "quadkey": "1231333213011202",
+      "tile_x": 88.3768,
+      "tile_y": 22.890099999999997,
+      "avg_d_kbps": 121419,
+      "avg_u_kbps": 33815,
+      "avg_lat_ms": 28,
+      "avg_lat_down_ms": 629,
+      "avg_lat_up_ms": 684,
+      "tests": 574,
+      "devices": 19
+    },
+    {
+      "quadkey": "1231333213322232",
+      "tile_x": 88.4317,
+      "tile_y": 22.596300000000003,
+      "avg_d_kbps": 198240,
+      "avg_u_kbps": 22829,
+      "avg_lat_ms": 29,
+      "avg_lat_down_ms": 895,
+      "avg_lat_up_ms": 1250,
+      "tests": 411,
+      "devices": 55
+    },
+    {
+      "quadkey": "1320220333201011",
+      "tile_x": 92.5241,
+      "tile_y": 24.684499999999996,
+      "avg_d_kbps": 78322,
+      "avg_u_kbps": 4100,
+      "avg_lat_ms": 41,
+      "avg_lat_down_ms": 1206,
+      "avg_lat_up_ms": 2260,
+      "tests": 403,
+      "devices": 4
+    }
+  ],
+  "bangladesh_centroid_row_count": 15956,
+  "bangladesh_centroid_rows_by_adm1": {
+    "Barisal": 961,
+    "Chittagong": 4022,
+    "Dhaka": 4420,
+    "Khulna": 1467,
+    "Mymensingh": 709,
+    "Rajshani": 1582,
+    "Rangpur": 1524,
+    "Sylhet": 1271
+  },
+  "bangladesh_centroid_summary": {
+    "tests": 62785,
+    "devices": 29693,
+    "missing_avg_lat_down_ms": 370,
+    "missing_avg_lat_up_ms": 184,
+    "tests_less_than_devices": 0
+  },
+  "representative_bangladesh_rows": [
+    {
+      "quadkey": "1320222021021031",
+      "tile_x": 90.4147,
+      "tile_y": 23.7929,
+      "avg_d_kbps": 28630,
+      "avg_u_kbps": 15908,
+      "avg_lat_ms": 43,
+      "avg_lat_down_ms": 1109,
+      "avg_lat_up_ms": 1298,
+      "tests": 319,
+      "devices": 45
+    },
+    {
+      "quadkey": "1320222021023110",
+      "tile_x": 90.43119999999999,
+      "tile_y": 23.762700000000002,
+      "avg_d_kbps": 41388,
+      "avg_u_kbps": 12599,
+      "avg_lat_ms": 18,
+      "avg_lat_down_ms": 855,
+      "avg_lat_up_ms": 1197,
+      "tests": 248,
+      "devices": 23
+    },
+    {
+      "quadkey": "1320222313203013",
+      "tile_x": 92.5241,
+      "tile_y": 22.7078,
+      "avg_d_kbps": 163882,
+      "avg_u_kbps": 5499,
+      "avg_lat_ms": 91,
+      "avg_lat_down_ms": 931,
+      "avg_lat_up_ms": 2946,
+      "tests": 235,
+      "devices": 8
+    },
+    {
+      "quadkey": "1231333312103211",
+      "tile_x": 89.5358,
+      "tile_y": 22.8547,
+      "avg_d_kbps": 52560,
+      "avg_u_kbps": 15647,
+      "avg_lat_ms": 21,
+      "avg_lat_down_ms": 575,
+      "avg_lat_up_ms": 853,
+      "tests": 227,
+      "devices": 4
+    },
+    {
+      "quadkey": "1320222021003321",
+      "tile_x": 90.42569999999999,
+      "tile_y": 23.813000000000002,
+      "avg_d_kbps": 45621,
+      "avg_u_kbps": 20852,
+      "avg_lat_ms": 20,
+      "avg_lat_down_ms": 1038,
+      "avg_lat_up_ms": 1209,
+      "tests": 200,
+      "devices": 58
+    }
+  ],
+  "boundary_path": "D:/others/Github/mobile_network_performance_intelligence/data/raw/geoBoundaries-BGD-ADM1.geojson",
+  "coverage_note": "Point-in-polygon checks against official ADM1 geometry verify source coverage. This is inspection evidence only; audited extraction, border handling, geometry validation, and saved geographic outputs are Phase 2."
+}

@@ -1,0 +1,34 @@
+{
+  "kpi": "test-weighted download Mbps by region and quarter",
+  "filter": {
+    "adm1_iso": "BD-C",
+    "adm1_name": "Dhaka",
+    "quarter_label": "2024-Q4"
+  },
+  "python": {
+    "numerator": 863192.131,
+    "denominator": 25540,
+    "result": 33.79765587314017,
+    "status": "verified"
+  },
+  "sqlite": {
+    "numerator": 863192.131,
+    "denominator": 25540,
+    "result": 33.79765587314017,
+    "status": "verified"
+  },
+  "power_bi": {
+    "formula": "DIVIDE(SUMX(FactTilePerformance, avg_d_mbps * tests), [Tests])",
+    "import_recalculation_result": 33.79765587314017,
+    "native_visual_status": "pending manual Desktop checkpoint"
+  },
+  "tableau": {
+    "formula": "SUM([avg_d_mbps] * [tests]) / SUM([tests])",
+    "export_recalculation_result": 33.79765587314017,
+    "native_visual_status": "pending manual Desktop checkpoint"
+  },
+  "python_sqlite_absolute_difference": 0.0,
+  "automated_tolerance": 1e-09,
+  "automated_pass": true,
+  "four_environment_final_status": "partial: Python/SQLite/import-export layers pass; native Power BI/Tableau visuals not yet verified"
+}

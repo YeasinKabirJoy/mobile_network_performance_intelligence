@@ -1,0 +1,345 @@
+{
+  "created_at_utc": "2026-10-19T10:45:33.724118+00:00",
+  "grain": "one ADM1 region for Q4 2024",
+  "method": "0-1 comparative percentile components combined into a 0-100 score",
+  "weights": {
+    "base": {
+      "speed": 0.45,
+      "latency": 0.35,
+      "sufficiency": 0.2,
+      "persistence": 0.0
+    },
+    "speed_emphasis": {
+      "speed": 0.6,
+      "latency": 0.25,
+      "sufficiency": 0.15,
+      "persistence": 0.0
+    },
+    "latency_emphasis": {
+      "speed": 0.3,
+      "latency": 0.55,
+      "sufficiency": 0.15,
+      "persistence": 0.0
+    },
+    "lower_volume_influence": {
+      "speed": 0.5,
+      "latency": 0.4,
+      "sufficiency": 0.1,
+      "persistence": 0.0
+    }
+  },
+  "persistence_policy": "Unavailable with one quarter; component is null and weight is zero in every scenario.",
+  "base_ranking": [
+    {
+      "adm1_iso": "BD-E",
+      "adm1_name": "Rajshani",
+      "base_score": 86.78571428571428,
+      "base_rank": 1,
+      "priority_reason": "comparatively high idle latency; comparatively weak speed",
+      "data_quality_note": "84.8% low-volume tiles; 3.4% incomplete loaded latency; single-quarter persistence unavailable"
+    },
+    {
+      "adm1_iso": "BD-A",
+      "adm1_name": "Barisal",
+      "base_score": 65.35714285714286,
+      "base_rank": 2,
+      "priority_reason": "comparatively weak speed; comparatively high idle latency",
+      "data_quality_note": "81.0% low-volume tiles; 2.8% incomplete loaded latency; single-quarter persistence unavailable"
+    },
+    {
+      "adm1_iso": "BD-F",
+      "adm1_name": "Rangpur",
+      "base_score": 62.5,
+      "base_rank": 3,
+      "priority_reason": "comparatively high idle latency; stronger evidence volume",
+      "data_quality_note": "82.7% low-volume tiles; 2.0% incomplete loaded latency; single-quarter persistence unavailable"
+    },
+    {
+      "adm1_iso": "BD-C",
+      "adm1_name": "Dhaka",
+      "base_score": 55.35714285714286,
+      "base_rank": 4,
+      "priority_reason": "stronger evidence volume; comparatively weak speed",
+      "data_quality_note": "73.9% low-volume tiles; 2.9% incomplete loaded latency; single-quarter persistence unavailable"
+    },
+    {
+      "adm1_iso": "BD-B",
+      "adm1_name": "Chittagong",
+      "base_score": 47.14285714285714,
+      "base_rank": 5,
+      "priority_reason": "stronger evidence volume; comparatively high idle latency",
+      "data_quality_note": "80.9% low-volume tiles; 3.6% incomplete loaded latency; single-quarter persistence unavailable"
+    },
+    {
+      "adm1_iso": "BD-D",
+      "adm1_name": "Khulna",
+      "base_score": 38.57142857142858,
+      "base_rank": 6,
+      "priority_reason": "comparatively weak speed; comparatively high idle latency",
+      "data_quality_note": "86.0% low-volume tiles; 2.1% incomplete loaded latency; single-quarter persistence unavailable"
+    },
+    {
+      "adm1_iso": "BD-H",
+      "adm1_name": "Mymensingh",
+      "base_score": 30.0,
+      "base_rank": 7,
+      "priority_reason": "comparatively weak speed; stronger evidence volume",
+      "data_quality_note": "87.6% low-volume tiles; 4.1% incomplete loaded latency; single-quarter persistence unavailable"
+    },
+    {
+      "adm1_iso": "BD-G",
+      "adm1_name": "Sylhet",
+      "base_score": 14.285714285714285,
+      "base_rank": 8,
+      "priority_reason": "comparatively high idle latency; stronger evidence volume",
+      "data_quality_note": "79.9% low-volume tiles; 2.2% incomplete loaded latency; single-quarter persistence unavailable"
+    }
+  ],
+  "three_region_traces": [
+    {
+      "adm1_iso": "BD-E",
+      "adm1_name": "Rajshani",
+      "inputs": {
+        "weighted_download_mbps": 34.16671929451764,
+        "weighted_upload_mbps": 13.874831491712706,
+        "weighted_idle_latency_ms": 43.252231194220144,
+        "tests": 4706,
+        "high_volume_tile_share": 0.012010113780025285
+      },
+      "components": {
+        "speed_weakness": 0.9285714285714286,
+        "latency_weakness": 1.0,
+        "data_sufficiency": 0.5,
+        "persistence": null
+      },
+      "base_formula": "100 * (0.45 * 0.928571 + 0.35 * 1.000000 + 0.20 * 0.500000)",
+      "base_score": 86.78571428571428,
+      "base_rank": 1,
+      "reason": "comparatively high idle latency; comparatively weak speed",
+      "data_quality_note": "84.8% low-volume tiles; 3.4% incomplete loaded latency; single-quarter persistence unavailable"
+    },
+    {
+      "adm1_iso": "BD-A",
+      "adm1_name": "Barisal",
+      "inputs": {
+        "weighted_download_mbps": 35.049996159527325,
+        "weighted_upload_mbps": 14.652450812407682,
+        "weighted_idle_latency_ms": 32.15184638109306,
+        "tests": 3385,
+        "high_volume_tile_share": 0.019771071800208116
+      },
+      "components": {
+        "speed_weakness": 0.7857142857142858,
+        "latency_weakness": 0.5714285714285714,
+        "data_sufficiency": 0.5,
+        "persistence": null
+      },
+      "base_formula": "100 * (0.45 * 0.785714 + 0.35 * 0.571429 + 0.20 * 0.500000)",
+      "base_score": 65.35714285714286,
+      "base_rank": 2,
+      "reason": "comparatively weak speed; comparatively high idle latency",
+      "data_quality_note": "81.0% low-volume tiles; 2.8% incomplete loaded latency; single-quarter persistence unavailable"
+    },
+    {
+      "adm1_iso": "BD-F",
+      "adm1_name": "Rangpur",
+      "inputs": {
+        "weighted_download_mbps": 42.503375,
+        "weighted_upload_mbps": 15.057189509646301,
+        "weighted_idle_latency_ms": 39.913987138263664,
+        "tests": 4976,
+        "high_volume_tile_share": 0.01115485564304462
+      },
+      "components": {
+        "speed_weakness": 0.5,
+        "latency_weakness": 0.8571428571428571,
+        "data_sufficiency": 0.5,
+        "persistence": null
+      },
+      "base_formula": "100 * (0.45 * 0.500000 + 0.35 * 0.857143 + 0.20 * 0.500000)",
+      "base_score": 62.5,
+      "base_rank": 3,
+      "reason": "comparatively high idle latency; stronger evidence volume",
+      "data_quality_note": "82.7% low-volume tiles; 2.0% incomplete loaded latency; single-quarter persistence unavailable"
+    }
+  ],
+  "sensitivity": {
+    "base": [
+      {
+        "adm1_iso": "BD-E",
+        "rank": 1,
+        "change_from_base": 0
+      },
+      {
+        "adm1_iso": "BD-A",
+        "rank": 2,
+        "change_from_base": 0
+      },
+      {
+        "adm1_iso": "BD-F",
+        "rank": 3,
+        "change_from_base": 0
+      },
+      {
+        "adm1_iso": "BD-C",
+        "rank": 4,
+        "change_from_base": 0
+      },
+      {
+        "adm1_iso": "BD-B",
+        "rank": 5,
+        "change_from_base": 0
+      },
+      {
+        "adm1_iso": "BD-D",
+        "rank": 6,
+        "change_from_base": 0
+      },
+      {
+        "adm1_iso": "BD-H",
+        "rank": 7,
+        "change_from_base": 0
+      },
+      {
+        "adm1_iso": "BD-G",
+        "rank": 8,
+        "change_from_base": 0
+      }
+    ],
+    "speed_emphasis": [
+      {
+        "adm1_iso": "BD-E",
+        "rank": 1,
+        "change_from_base": 0
+      },
+      {
+        "adm1_iso": "BD-A",
+        "rank": 2,
+        "change_from_base": 0
+      },
+      {
+        "adm1_iso": "BD-F",
+        "rank": 4,
+        "change_from_base": -1
+      },
+      {
+        "adm1_iso": "BD-C",
+        "rank": 3,
+        "change_from_base": 1
+      },
+      {
+        "adm1_iso": "BD-B",
+        "rank": 6,
+        "change_from_base": -1
+      },
+      {
+        "adm1_iso": "BD-D",
+        "rank": 5,
+        "change_from_base": 1
+      },
+      {
+        "adm1_iso": "BD-H",
+        "rank": 7,
+        "change_from_base": 0
+      },
+      {
+        "adm1_iso": "BD-G",
+        "rank": 8,
+        "change_from_base": 0
+      }
+    ],
+    "latency_emphasis": [
+      {
+        "adm1_iso": "BD-E",
+        "rank": 1,
+        "change_from_base": 0
+      },
+      {
+        "adm1_iso": "BD-A",
+        "rank": 3,
+        "change_from_base": -1
+      },
+      {
+        "adm1_iso": "BD-F",
+        "rank": 2,
+        "change_from_base": 1
+      },
+      {
+        "adm1_iso": "BD-C",
+        "rank": 6,
+        "change_from_base": -2
+      },
+      {
+        "adm1_iso": "BD-B",
+        "rank": 4,
+        "change_from_base": 1
+      },
+      {
+        "adm1_iso": "BD-D",
+        "rank": 5,
+        "change_from_base": 1
+      },
+      {
+        "adm1_iso": "BD-H",
+        "rank": 7,
+        "change_from_base": 0
+      },
+      {
+        "adm1_iso": "BD-G",
+        "rank": 8,
+        "change_from_base": 0
+      }
+    ],
+    "lower_volume_influence": [
+      {
+        "adm1_iso": "BD-E",
+        "rank": 1,
+        "change_from_base": 0
+      },
+      {
+        "adm1_iso": "BD-A",
+        "rank": 2,
+        "change_from_base": 0
+      },
+      {
+        "adm1_iso": "BD-F",
+        "rank": 3,
+        "change_from_base": 0
+      },
+      {
+        "adm1_iso": "BD-C",
+        "rank": 4,
+        "change_from_base": 0
+      },
+      {
+        "adm1_iso": "BD-B",
+        "rank": 5,
+        "change_from_base": 0
+      },
+      {
+        "adm1_iso": "BD-D",
+        "rank": 6,
+        "change_from_base": 0
+      },
+      {
+        "adm1_iso": "BD-H",
+        "rank": 7,
+        "change_from_base": 0
+      },
+      {
+        "adm1_iso": "BD-G",
+        "rank": 8,
+        "change_from_base": 0
+      }
+    ]
+  },
+  "outputs": {
+    "csv": "D:/others/Github/mobile_network_performance_intelligence/data/processed/investigation_priority_by_adm1.csv",
+    "parquet": "D:/others/Github/mobile_network_performance_intelligence/data/processed/investigation_priority_by_adm1.parquet",
+    "figures": [
+      "D:/others/Github/mobile_network_performance_intelligence/reports/figures/scoring/01_priority_score.png",
+      "D:/others/Github/mobile_network_performance_intelligence/reports/figures/scoring/02_rank_sensitivity.png"
+    ]
+  },
+  "interpretation": "Priority is a transparent hypothesis generator, not a fault diagnosis or probability."
+}

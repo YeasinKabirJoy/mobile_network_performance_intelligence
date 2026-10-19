@@ -1,0 +1,59 @@
+// Tile-Quarter Key
+[quadkey] + "|" + [quarter_label]
+
+// Tile Count
+COUNTD([Tile-Quarter Key])
+
+// Test-Weighted Download Mbps
+SUM([avg_d_mbps] * [tests]) / SUM([tests])
+
+// Test-Weighted Upload Mbps
+SUM([avg_u_mbps] * [tests]) / SUM([tests])
+
+// Test-Weighted Idle Latency Ms
+SUM(
+    IF NOT ISNULL([avg_lat_ms])
+    THEN [avg_lat_ms] * [tests]
+    END
+)
+/
+SUM(
+    IF NOT ISNULL([avg_lat_ms])
+    THEN [tests]
+    END
+)
+
+// Test-Weighted Download-Loaded Latency Ms
+SUM(
+    IF NOT ISNULL([avg_lat_down_ms])
+    THEN [avg_lat_down_ms] * [tests]
+    END
+)
+/
+SUM(
+    IF NOT ISNULL([avg_lat_down_ms])
+    THEN [tests]
+    END
+)
+
+// Low-Volume Tile Percent
+COUNTD(
+    IF [measurement_volume] = "low"
+    THEN [Tile-Quarter Key]
+    END
+)
+/
+COUNTD([Tile-Quarter Key])
+
+// Regional Priority Score
+MIN([base_score])
+
+// Regional Priority Rank
+MIN([base_rank])
+
+// Evidence Warning
+IF [Low-Volume Tile Percent] >= 0.80 THEN
+    "Caution: 80% or more of selected tiles have 1-4 tests"
+ELSE
+    "Review volume and loaded-latency completeness before action"
+END

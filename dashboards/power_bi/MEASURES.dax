@@ -1,0 +1,82 @@
+-- Create these as explicit measures in Power BI Desktop.
+
+Tiles =
+COUNTROWS ( FactTilePerformance )
+
+Tests =
+SUM ( FactTilePerformance[tests] )
+
+Devices =
+SUM ( FactTilePerformance[devices] )
+
+Test-Weighted Download Mbps =
+DIVIDE (
+    SUMX (
+        FactTilePerformance,
+        FactTilePerformance[avg_d_mbps] * FactTilePerformance[tests]
+    ),
+    [Tests]
+)
+
+Test-Weighted Upload Mbps =
+DIVIDE (
+    SUMX (
+        FactTilePerformance,
+        FactTilePerformance[avg_u_mbps] * FactTilePerformance[tests]
+    ),
+    [Tests]
+)
+
+Idle-Latency Eligible Tests =
+CALCULATE (
+    [Tests],
+    NOT ISBLANK ( FactTilePerformance[avg_lat_ms] )
+)
+
+Test-Weighted Idle Latency Ms =
+DIVIDE (
+    SUMX (
+        FILTER ( FactTilePerformance, NOT ISBLANK ( FactTilePerformance[avg_lat_ms] ) ),
+        FactTilePerformance[avg_lat_ms] * FactTilePerformance[tests]
+    ),
+    [Idle-Latency Eligible Tests]
+)
+
+Loaded-Latency Eligible Tests =
+CALCULATE (
+    [Tests],
+    NOT ISBLANK ( FactTilePerformance[avg_lat_down_ms] )
+        && NOT ISBLANK ( FactTilePerformance[avg_lat_up_ms] )
+)
+
+Low-Volume Tiles =
+CALCULATE (
+    [Tiles],
+    FactTilePerformance[measurement_volume] = "low"
+)
+
+Low-Volume Tile Percent =
+DIVIDE ( [Low-Volume Tiles], [Tiles] )
+
+Priority Score =
+MAX ( FactRegionPriority[base_score] )
+
+Priority Rank =
+MIN ( FactRegionPriority[base_rank] )
+
+Data Quality Warning =
+VAR LowVolumeShare = [Low-Volume Tile Percent]
+RETURN
+    IF (
+        ISBLANK ( LowVolumeShare ),
+        "No eligible rows under current filters",
+        IF (
+            LowVolumeShare >= 0.80,
+            "Caution: 80% or more of selected tiles have 1-4 tests",
+            "Review tile volume and loaded-latency completeness before action"
+        )
+    )
+
+Dashboard Scope =
+"Q4 2024 | "
+    & COALESCE ( SELECTEDVALUE ( DimRegion[adm1_name] ), "All Bangladesh" )

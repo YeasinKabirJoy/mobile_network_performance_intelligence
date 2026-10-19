@@ -1,0 +1,63 @@
+{
+  "created_at_utc": "2026-10-19T12:53:49.350432+00:00",
+  "required_artifact_count": 17,
+  "missing_artifacts": [],
+  "claim_checks": {
+    "rows": {
+      "expected": 15956,
+      "observed": 15956,
+      "pass": true
+    },
+    "tests": {
+      "expected": 62785,
+      "observed": 62785,
+      "pass": true
+    },
+    "devices": {
+      "expected": 29693,
+      "observed": 29693,
+      "pass": true
+    },
+    "weighted_download_mbps": {
+      "expected": 37.625393756470494,
+      "observed": 37.625393756470494,
+      "pass": true
+    },
+    "weighted_upload_mbps": {
+      "expected": 16.039675017918288,
+      "observed": 16.039675017918288,
+      "pass": true
+    },
+    "weighted_idle_latency_ms": {
+      "expected": 31.13791510711157,
+      "observed": 31.13791510711157,
+      "pass": true
+    },
+    "median_download_mbps": {
+      "expected": 27.8645,
+      "observed": 27.8645,
+      "pass": true
+    },
+    "low_volume_tiles": {
+      "expected": 12797,
+      "observed": 12797,
+      "pass": true
+    },
+    "top_priority_region": {
+      "expected": "Rajshani",
+      "observed": "Rajshani",
+      "pass": true
+    }
+  },
+  "reconciliation_checks": {
+    "python_vs_sqlite": true,
+    "power_bi_import_rows_vs_sqlite": true,
+    "tableau_export_rows_vs_sqlite": true
+  },
+  "desktop_dashboard_status": {
+    "power_bi": "manual checkpoint pending; no PBIX or native screenshot claimed",
+    "tableau": "manual checkpoint pending; no TWB/TWBX or native screenshot claimed"
+  },
+  "phase9_automated_checks_pass": true,
+  "project_completion_status": "Phase 10 documentation complete; native Power BI and Tableau checkpoints remain"
+}

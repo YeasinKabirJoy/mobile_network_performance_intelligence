@@ -1,0 +1,12 @@
+{
+  "created_at_utc": "2026-10-19T12:42:30.083214+00:00",
+  "source_database": "data/processed/network_performance.sqlite",
+  "export": "data/processed/tableau/TableauTileExplorer.csv",
+  "rows": 15956,
+  "columns": 24,
+  "sha256": "4D0A235D87232557807E852CE10B62D0E7E95AD0F88E909EB7FCB51A5FDC1FF8",
+  "dictionary": "data/processed/tableau/TableauFieldDictionary.csv",
+  "dictionary_rows": 24,
+  "preview": "reports/figures/tableau/geographic_explorer_build_reference.png",
+  "grain": "one measurement tile for one quarter, with repeated region-quarter priority attributes"
+}

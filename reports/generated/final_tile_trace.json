@@ -1,0 +1,99 @@
+{
+  "quadkey": "1320222021021031",
+  "raw": {
+    "quadkey": "1320222021021031",
+    "tile": "POLYGON((90.4119873046875 23.7953975979787, 90.41748046875 23.7953975979787, 90.41748046875 23.7903712991571, 90.4119873046875 23.7903712991571, 90.4119873046875 23.7953975979787))",
+    "tile_x": 90.4147,
+    "tile_y": 23.7929,
+    "avg_d_kbps": 28630,
+    "avg_u_kbps": 15908,
+    "avg_lat_ms": 43,
+    "avg_lat_down_ms": 1109,
+    "avg_lat_up_ms": 1298,
+    "tests": 319,
+    "devices": 45
+  },
+  "geographic_extraction": {
+    "bbox_candidate": true,
+    "centroid_rule": "EPSG:4326 centroid intersects ADM1 polygon",
+    "adm1_iso": "BD-C",
+    "adm1_name": "Dhaka",
+    "boundary_ambiguous": false
+  },
+  "cleaning": {
+    "avg_d_kbps": 28630,
+    "avg_d_mbps": 28.63,
+    "avg_u_kbps": 15908,
+    "avg_u_mbps": 15.908,
+    "loaded_latency_complete": true,
+    "measurement_volume": "high",
+    "quality_note": "none"
+  },
+  "sqlite": {
+    "quadkey": "1320222021021031",
+    "period_start": "2024-10-01",
+    "year": 2024,
+    "quarter": 4,
+    "quarter_label": "2024-Q4",
+    "source_layer": "performance_mobile_tiles",
+    "adm1_iso": "BD-C",
+    "tile_wkt": "POLYGON((90.4119873046875 23.7953975979787, 90.41748046875 23.7953975979787, 90.41748046875 23.7903712991571, 90.4119873046875 23.7903712991571, 90.4119873046875 23.7953975979787))",
+    "longitude": 90.4147,
+    "latitude": 23.7929,
+    "avg_d_kbps": 28630,
+    "avg_u_kbps": 15908,
+    "avg_d_mbps": 28.63,
+    "avg_u_mbps": 15.908,
+    "avg_lat_ms": 43,
+    "avg_lat_down_ms": 1109,
+    "avg_lat_up_ms": 1298,
+    "tests": 319,
+    "devices": 45,
+    "measurement_volume": "high",
+    "loaded_latency_complete": 1,
+    "quality_note": "none",
+    "boundary_ambiguous": 0
+  },
+  "regional_kpi_contribution": {
+    "tile_numerator_mbps_tests": 9132.97,
+    "dhaka_numerator_mbps_tests": 863192.131,
+    "dhaka_denominator_tests": 25540,
+    "dhaka_weighted_download_mbps": 33.79765587314017,
+    "tile_share_of_numerator": 0.010580460215061899
+  },
+  "eda_presence": [
+    "download distribution",
+    "upload distribution",
+    "idle-latency distribution",
+    "regional download boxplot",
+    "download-latency scatter",
+    "measurement-volume chart",
+    "tile download map"
+  ],
+  "regional_score": {
+    "scope": "Dhaka ADM1; the tile contributes to regional inputs but does not receive an independent score",
+    "speed_weakness": 0.7857142857142857,
+    "latency_weakness": 0.0,
+    "data_sufficiency": 1.0,
+    "formula": "100 * (0.45 * 0.785714 + 0.35 * 0.0 + 0.20 * 1.0)",
+    "base_score": 55.35714285714286,
+    "base_rank": 4
+  },
+  "bi_exports": {
+    "power_bi_row_present": true,
+    "tableau_row_present": true,
+    "tableau_expected_selection": {
+      "quadkey": "1320222021021031",
+      "quarter_label": "2024-Q4",
+      "adm1_name": "Dhaka",
+      "longitude": 90.4147,
+      "latitude": 23.7929,
+      "avg_d_mbps": 28.63,
+      "avg_u_mbps": 15.908,
+      "avg_lat_ms": 43,
+      "tests": 319,
+      "devices": 45
+    },
+    "native_dashboard_verification": "pending manual Desktop checkpoint"
+  }
+}

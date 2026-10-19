@@ -1,0 +1,23 @@
+{
+  "selection_rule": "highest test count, then ascending quadkey",
+  "quadkey": "1320222021021031",
+  "quarter_label": "2024-Q4",
+  "adm1_iso": "BD-C",
+  "adm1_name": "Dhaka",
+  "longitude": 90.4147,
+  "latitude": 23.7929,
+  "avg_d_mbps": 28.63,
+  "avg_u_mbps": 15.908,
+  "avg_lat_ms": 43.0,
+  "tests": 319,
+  "devices": 45,
+  "measurement_volume": "high",
+  "tile_download_numerator_mbps_tests": 9132.97,
+  "region_download_numerator_mbps_tests": 863192.131,
+  "region_download_denominator_tests": 25540,
+  "region_weighted_download_mbps": 33.79765587314017,
+  "tile_share_of_region_download_numerator": 0.010580460215061899,
+  "base_priority_score": 55.35714285714286,
+  "base_priority_rank": 4,
+  "interpretation": "A selected measurement tile contributing to an aggregate; not a tower or individual test."
+}

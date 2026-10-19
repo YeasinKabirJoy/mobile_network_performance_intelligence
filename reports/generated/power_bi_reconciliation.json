@@ -1,0 +1,120 @@
+{
+  "filters": {
+    "all_bangladesh": {
+      "tiles": {
+        "sqlite": 15956,
+        "power_bi_import_recalculation": 15956,
+        "absolute_difference": 0.0,
+        "pass": true
+      },
+      "tests": {
+        "sqlite": 62785,
+        "power_bi_import_recalculation": 62785,
+        "absolute_difference": 0.0,
+        "pass": true
+      },
+      "devices": {
+        "sqlite": 29693,
+        "power_bi_import_recalculation": 29693,
+        "absolute_difference": 0.0,
+        "pass": true
+      },
+      "weighted_download_mbps": {
+        "sqlite": 37.625393756470494,
+        "power_bi_import_recalculation": 37.625393756470494,
+        "absolute_difference": 0.0,
+        "pass": true
+      },
+      "weighted_upload_mbps": {
+        "sqlite": 16.03967501791829,
+        "power_bi_import_recalculation": 16.03967501791829,
+        "absolute_difference": 0.0,
+        "pass": true
+      },
+      "weighted_idle_latency_ms": {
+        "sqlite": 31.13791510711157,
+        "power_bi_import_recalculation": 31.13791510711157,
+        "absolute_difference": 0.0,
+        "pass": true
+      }
+    },
+    "dhaka": {
+      "tiles": {
+        "sqlite": 4420,
+        "power_bi_import_recalculation": 4420,
+        "absolute_difference": 0.0,
+        "pass": true
+      },
+      "tests": {
+        "sqlite": 25540,
+        "power_bi_import_recalculation": 25540,
+        "absolute_difference": 0.0,
+        "pass": true
+      },
+      "devices": {
+        "sqlite": 11811,
+        "power_bi_import_recalculation": 11811,
+        "absolute_difference": 0.0,
+        "pass": true
+      },
+      "weighted_download_mbps": {
+        "sqlite": 33.79765587314017,
+        "power_bi_import_recalculation": 33.79765587314017,
+        "absolute_difference": 0.0,
+        "pass": true
+      },
+      "weighted_upload_mbps": {
+        "sqlite": 15.061621378230226,
+        "power_bi_import_recalculation": 15.061621378230226,
+        "absolute_difference": 0.0,
+        "pass": true
+      },
+      "weighted_idle_latency_ms": {
+        "sqlite": 26.38061863743148,
+        "power_bi_import_recalculation": 26.38061863743148,
+        "absolute_difference": 0.0,
+        "pass": true
+      }
+    },
+    "rajshani": {
+      "tiles": {
+        "sqlite": 1582,
+        "power_bi_import_recalculation": 1582,
+        "absolute_difference": 0.0,
+        "pass": true
+      },
+      "tests": {
+        "sqlite": 4706,
+        "power_bi_import_recalculation": 4706,
+        "absolute_difference": 0.0,
+        "pass": true
+      },
+      "devices": {
+        "sqlite": 2356,
+        "power_bi_import_recalculation": 2356,
+        "absolute_difference": 0.0,
+        "pass": true
+      },
+      "weighted_download_mbps": {
+        "sqlite": 34.16671929451764,
+        "power_bi_import_recalculation": 34.16671929451764,
+        "absolute_difference": 0.0,
+        "pass": true
+      },
+      "weighted_upload_mbps": {
+        "sqlite": 13.874831491712708,
+        "power_bi_import_recalculation": 13.874831491712706,
+        "absolute_difference": 1.7763568394002505e-15,
+        "pass": true
+      },
+      "weighted_idle_latency_ms": {
+        "sqlite": 43.252231194220144,
+        "power_bi_import_recalculation": 43.252231194220144,
+        "absolute_difference": 0.0,
+        "pass": true
+      }
+    }
+  },
+  "tolerance": 1e-09,
+  "all_pass": true
+}

@@ -1,0 +1,194 @@
+{
+  "rows": 15956,
+  "tests": 62785,
+  "devices": 29693,
+  "metrics": {
+    "avg_d_mbps": {
+      "count": 15956,
+      "mean": 36.078124655302084,
+      "median": 27.8645,
+      "std": 34.109506050605596,
+      "p05": 4.36475,
+      "p25": 15.45975,
+      "p75": 45.45825,
+      "p95": 94.13024999999999,
+      "p99": 168.09965000000008,
+      "min": 0.031,
+      "max": 532.573,
+      "skew": 3.5794967588845803
+    },
+    "avg_u_mbps": {
+      "count": 15956,
+      "mean": 14.77961556781148,
+      "median": 11.116,
+      "std": 12.868279843718486,
+      "p05": 0.6577500000000001,
+      "p25": 4.56875,
+      "p75": 22.4555,
+      "p95": 39.2605,
+      "p99": 52.56585000000001,
+      "min": 0.001,
+      "max": 170.529,
+      "skew": 1.36188968636325
+    },
+    "avg_lat_ms": {
+      "count": 15956,
+      "mean": 32.07677362747556,
+      "median": 27.0,
+      "std": 35.51238496917774,
+      "p05": 17.0,
+      "p25": 22.0,
+      "p75": 32.0,
+      "p95": 56.0,
+      "p99": 154.0,
+      "min": 0.0,
+      "max": 1138.0,
+      "skew": 13.85911007247633
+    },
+    "tests": {
+      "count": 15956,
+      "mean": 3.934883429430935,
+      "median": 2.0,
+      "std": 8.761942090645382,
+      "p05": 1.0,
+      "p25": 1.0,
+      "p75": 4.0,
+      "p95": 13.0,
+      "p99": 36.0,
+      "min": 1.0,
+      "max": 319.0,
+      "skew": 12.661287323441947
+    },
+    "devices": {
+      "count": 15956,
+      "mean": 1.860930057658561,
+      "median": 1.0,
+      "std": 2.6020314099464916,
+      "p05": 1.0,
+      "p25": 1.0,
+      "p75": 2.0,
+      "p95": 5.0,
+      "p99": 14.0,
+      "min": 1.0,
+      "max": 58.0,
+      "skew": 7.288802059840419
+    }
+  },
+  "correlations": {
+    "pearson_download_latency": -0.07314869652526064,
+    "spearman_download_latency": -0.15756385706244766,
+    "pearson_tests_download": 0.02037272552083637,
+    "spearman_tests_download": 0.14083778446770898
+  },
+  "counts": {
+    "download_below_10_mbps": 2264,
+    "idle_latency_above_100_ms": 325,
+    "loaded_latency_incomplete": 473
+  },
+  "measurement_volume": {
+    "high": 427,
+    "low": 12797,
+    "medium": 2732
+  },
+  "regional": [
+    {
+      "adm1_name": "Barisal",
+      "tiles": 961,
+      "tests": 3385,
+      "devices": 1368,
+      "median_download_mbps": 26.136,
+      "weighted_download_mbps": 35.049996159527325,
+      "weighted_upload_mbps": 14.652450812407682,
+      "weighted_idle_latency_ms": 32.15184638109306
+    },
+    {
+      "adm1_name": "Chittagong",
+      "tiles": 4022,
+      "tests": 13813,
+      "devices": 6971,
+      "median_download_mbps": 31.835,
+      "weighted_download_mbps": 42.78309708245855,
+      "weighted_upload_mbps": 18.118408600593643,
+      "weighted_idle_latency_ms": 33.09208716426555
+    },
+    {
+      "adm1_name": "Dhaka",
+      "tiles": 4420,
+      "tests": 25540,
+      "devices": 11811,
+      "median_download_mbps": 26.3485,
+      "weighted_download_mbps": 33.79765587314017,
+      "weighted_upload_mbps": 15.061621378230226,
+      "weighted_idle_latency_ms": 26.38061863743148
+    },
+    {
+      "adm1_name": "Khulna",
+      "tiles": 1467,
+      "tests": 4203,
+      "devices": 2115,
+      "median_download_mbps": 26.682,
+      "weighted_download_mbps": 35.79740471092077,
+      "weighted_upload_mbps": 15.663152985962409,
+      "weighted_idle_latency_ms": 30.637401855817274
+    },
+    {
+      "adm1_name": "Mymensingh",
+      "tiles": 709,
+      "tests": 1900,
+      "devices": 995,
+      "median_download_mbps": 25.885,
+      "weighted_download_mbps": 38.34916789473684,
+      "weighted_upload_mbps": 15.411994210526316,
+      "weighted_idle_latency_ms": 28.628947368421052
+    },
+    {
+      "adm1_name": "Rajshani",
+      "tiles": 1582,
+      "tests": 4706,
+      "devices": 2356,
+      "median_download_mbps": 25.009999999999998,
+      "weighted_download_mbps": 34.16671929451764,
+      "weighted_upload_mbps": 13.874831491712706,
+      "weighted_idle_latency_ms": 43.252231194220144
+    },
+    {
+      "adm1_name": "Rangpur",
+      "tiles": 1524,
+      "tests": 4976,
+      "devices": 2195,
+      "median_download_mbps": 24.261499999999998,
+      "weighted_download_mbps": 42.503375,
+      "weighted_upload_mbps": 15.057189509646301,
+      "weighted_idle_latency_ms": 39.913987138263664
+    },
+    {
+      "adm1_name": "Sylhet",
+      "tiles": 1271,
+      "tests": 4262,
+      "devices": 1882,
+      "median_download_mbps": 34.546,
+      "weighted_download_mbps": 45.49642726419521,
+      "weighted_upload_mbps": 20.453896996715155,
+      "weighted_idle_latency_ms": 30.49671515720319
+    }
+  ],
+  "weighted_national": {
+    "download_mbps": 37.625393756470494,
+    "upload_mbps": 16.039675017918288,
+    "idle_latency_ms": 31.13791510711157
+  },
+  "created_at_utc": "2026-10-19T10:39:45.295152+00:00",
+  "figure_count": 8,
+  "figures": [
+    "reports/figures/eda/01_download_distribution.png",
+    "reports/figures/eda/02_upload_distribution.png",
+    "reports/figures/eda/03_idle_latency_distribution.png",
+    "reports/figures/eda/04_regional_download_boxplot.png",
+    "reports/figures/eda/05_regional_weighted_throughput.png",
+    "reports/figures/eda/06_download_latency_scatter.png",
+    "reports/figures/eda/07_measurement_volume.png",
+    "reports/figures/eda/08_download_map.png"
+  ],
+  "contact_sheet": "reports/figures/eda/eda_contact_sheet.jpg",
+  "scope": "Descriptive Q4 2024 tile-level and test-weighted summaries for retained Bangladesh observations"
+}

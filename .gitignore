@@ -236,3 +236,7 @@ data/processed/*
 .jupyter/
 .jupyter-data/
 .jupyter-runtime/
+
+# BI temp and recovery files
+*.twbr
+~*

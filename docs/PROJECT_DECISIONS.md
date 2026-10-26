@@ -115,6 +115,12 @@
 
 - Decision: separate completion of the reproducible analytics/documentation workflow from native dashboard acceptance.
 - Evidence complete: source-to-output architecture, seven-item file tour, real tile trace, KPI trace, decisions, runbook, learning model, interview drill, and presentation scripts.
-- Native BI status: curated rows and formulas reconcile, but no PBIX/TWBX or genuine interactive screenshot is claimed.
-- Consequence: Step 10 documentation is complete while overall acceptance remains pending the two manual Desktop checkpoints.
+- Consequence: Step 10 documentation is complete and verified.
 - Validation: `src.final_trace`, `src.assure`, unit tests, notebook error scan, compile check, and diff check.
+
+## D-015 - Native Power BI and Tableau Desktop dashboard completion
+
+- Decision: build, verify, and document native Desktop workbooks and interactive screenshots.
+- Power BI: native workbook `powerBI/dashboard.pbix` constructed using the 4 curated CSV tables, 1-to-many Star Schema, and explicit DAX measures; verified against benchmark reconciliation. Native screenshot captured and referenced.
+- Tableau: native workbook `tableau/dashboard.twb` constructed with 4 core views (`Tile_Map`, `Region_Comparison`, `Investigation_Priority`, `Latency_Distribution`) on `Geographic_Explorer` dashboard; verified against benchmark reconciliation. Native screenshot captured and referenced.
+- Status: both manual desktop checkpoints are completed and verified; `src.assure` and portfolio assets updated.

@@ -2,7 +2,7 @@
 
 ## Status and purpose
 
-The Tableau-ready flat extract, field dictionary, calculated fields, worksheet/dashboard specification, selected-tile trace, build reference, and reconciliation evidence are complete. Tableau Desktop 2026.2 is installed, but the available computer-control service exposed no native application window. Therefore no `.twb`, `.twbx`, or genuine Tableau screenshot is claimed.
+The Tableau-ready flat extract, field dictionary, calculated fields, worksheet/dashboard specification, native workbook (`tableau/dashboard.twb`), actual dashboard screenshot, selected-tile trace, and cross-tool reconciliation evidence are complete and verified.
 
 The dashboard is an exploratory companion to the Power BI management view. It is designed for map-led selection, distribution inspection, and tile detail—not executive status reporting or fault diagnosis.
 

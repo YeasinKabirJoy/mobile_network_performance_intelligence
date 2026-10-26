@@ -4,7 +4,26 @@ A phased, reproducible portfolio project that investigates public Ookla mobile-n
 
 ## Current status
 
-Phase 10 - mandatory workflow deep dive, real-tile trace, four-environment KPI trace, clean-environment runbook, complete interview preparation, and presentation scripts are complete. Native Power BI/Tableau Desktop workbook and screenshot acceptance remains pending, so the project is not falsely declared fully complete.
+All 10 project phases, complete interview preparation, presentation scripts, and native Desktop BI builds are complete. The interactive **Power BI Management Dashboard** (`powerBI/dashboard.pbix`) and **Tableau Geographic Explorer** (`tableau/dashboard.twb`) are fully built, reconciled against benchmarks, verified through the Phase 9 assurance suite, and documented with native desktop screenshots.
+
+## Interactive BI dashboards
+
+The project provides interactive implementations in both **Power BI** and **Tableau** sharing the exact same governed metric definitions and SQLite/Python benchmark reconciliation:
+
+### Power BI: Governed Executive Management Overview
+- **Workbook:** `powerBI/dashboard.pbix`
+- **Architecture:** Clean Star Schema (`DimRegion`, `DimQuarter`, `FactTilePerformance`, `FactRegionPriority`) with 1-to-many single-direction relationships.
+- **Components:** 6 KPI metric cards, regional download throughput bar chart, triage priority score bar chart, and regional priority ranking table.
+
+![Power BI Management Dashboard](reports/figures/power_bi/management_dashboard_build_reference.png)
+
+### Tableau: Geographic Explorer & Distribution Inspection
+- **Workbook:** `tableau/dashboard.twb`
+- **Dashboard:** Geographic Explorer
+- **Architecture:** Flat tile-quarter extract (15,956 tiles) designed for map-led exploration and distribution inspection.
+- **Components:** Full Bangladesh measurement tile map (with test-volume sizing and speed gradient), regional download throughput, triage priority index, and division-level idle latency box-and-whisker distribution.
+
+![Tableau Geographic Explorer Dashboard](reports/figures/tableau/geographic_explorer_build_reference.png)
 
 ## Verified headline results
 
@@ -104,7 +123,7 @@ Prepare the Phase 7 Power BI handoff with:
 python -m src.export_power_bi
 ```
 
-This regenerates four curated Import-mode CSVs from SQLite/Phase 6 output, reconciles the default view plus Dhaka and Rajshani filters, and writes the dashboard build reference. See `dashboards/power_bi/MODEL_AND_BUILD_GUIDE.md` for the model, visuals, interactions, refresh steps, and explicit DAX measures.
+This regenerates four curated Import-mode CSVs from SQLite/Phase 6 output, reconciles the default view plus Dhaka and Rajshani filters, and writes the dashboard build reference. See `dashboards/power_bi/MODEL_AND_BUILD_GUIDE.md` for the model, visuals, interactions, refresh steps, and explicit DAX measures. The verified workbook is saved at `powerBI/dashboard.pbix`.
 
 Prepare the Phase 8 Tableau handoff with:
 
@@ -112,7 +131,7 @@ Prepare the Phase 8 Tableau handoff with:
 python -m src.export_tableau
 ```
 
-This creates a flat tile-quarter explorer export, complete field dictionary, real selected-tile trace, Tableau/SQLite reconciliation, and a map-led build reference. See `dashboards/tableau/TABLEAU_BUILD_GUIDE.md` for worksheets, calculated fields, filters, actions, tooltips, packaging, and Tableau Public cautions.
+This creates a flat tile-quarter explorer export, complete field dictionary, real selected-tile trace, Tableau/SQLite reconciliation, and a map-led build reference. See `dashboards/tableau/TABLEAU_BUILD_GUIDE.md` for worksheets, calculated fields, filters, actions, tooltips, packaging, and Tableau Public cautions. The verified workbook is saved at `tableau/dashboard.twb`.
 
 Run the Phase 9 assurance gate with:
 
@@ -121,7 +140,7 @@ python -m src.assure
 python -m unittest discover -s tests -v
 ```
 
-The assurance command verifies required portfolio artifacts, published headline claims, and all automated cross-tool reconciliation layers. It deliberately reports native BI Desktop files/screenshots as pending rather than overstating completion.
+The assurance command verifies required portfolio artifacts, published headline claims, automated cross-tool reconciliation layers, and native Desktop BI workbooks.
 
 Generate and review the final real-evidence traces with:
 
@@ -129,14 +148,14 @@ Generate and review the final real-evidence traces with:
 python -m src.final_trace
 ```
 
-Final teaching artifacts:
+<!-- Final teaching artifacts:
 
 - `docs/WORKFLOW_EXPLANATION.md` - architecture and mandatory sections 10A-10J.
 - `docs/EXAMPLE_TILE_TRACE.md` - actual quadkey through every implemented layer.
 - `docs/KPI_RECONCILIATION.md` - Dhaka weighted-download proof across four environments.
 - `docs/RUNBOOK.md` - clean Windows reproduction and troubleshooting.
 - `docs/INTERVIEW_QA.md` - all phase answers, 50-question drill, and debugging exercises.
-- `docs/PROJECT_PRESENTATION.md` - 60-second, 3-minute, 5-minute, management, CV, and portfolio versions.
+- `docs/PROJECT_PRESENTATION.md` - 60-second, 3-minute, 5-minute, management, CV, and portfolio versions. -->
 
 ## Source and license
 

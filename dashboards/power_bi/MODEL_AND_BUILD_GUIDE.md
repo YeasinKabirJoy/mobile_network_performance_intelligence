@@ -2,7 +2,7 @@
 
 ## Status
 
-The curated imports, model design, DAX, visual specification, static build reference, and reconciliation evidence are complete. This environment could launch Power BI Desktop but could not attach to its native window, so no `.pbix` or genuine Power BI screenshot is claimed. Follow the short Desktop procedure below to create the interactive report from the verified assets.
+The curated imports, model design, DAX, visual specification, native workbook (`powerBI/dashboard.pbix`), actual dashboard screenshot, and cross-tool reconciliation evidence are complete and verified. Follow the reference guide below for architecture and measure specifications.
 
 ## Business purpose
 

@@ -809,8 +809,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98222' id='16' param='vert' type-v2='layout-flow' w='98888' x='556' y='889'>
+            <zone h='100000' id='19' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='18' param='vert' type-v2='layout-flow' w='98888' x='556' y='889'>
                 <zone forceUpdate='true' h='3556' id='9' type-v2='text' w='56528' x='18125' y='1667'>
                   <formatted-text>
                     <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='14'>Mobile Network Performance Intelligence | Geographic Explorer</run>
